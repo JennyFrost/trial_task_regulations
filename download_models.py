@@ -2,15 +2,15 @@ from pathlib import Path
 from huggingface_hub import snapshot_download
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
+PROJECT_ROOT = Path(__file__).resolve().parent
 MODELS_DIR = PROJECT_ROOT / "models"
-
-
 MODELS = {
     # "embedding_model": "deepvk/USER-bge-m3",
-    "embedding_model_regulations": "deepvk/USER-bge-m3",
-    "embedding_model_tnved": "intfloat/multilingual-e5-small",
-    "reranker_model": "qilowoq/bge-reranker-v2-m3-en-ru",
+    "bge_m3": "deepvk/USER-bge-m3",
+    "e5": "intfloat/multilingual-e5-base",
+    # "reranker_model": "qilowoq/bge-reranker-v2-m3-en-ru",
+    # "reranker_model_bert": "ARGA100/ru-reranker-modernbert-small"
+
 }
 
 
